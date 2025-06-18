@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java.az</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Prism.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="assets/Logo.png" alt="Java.az Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#java-nedir">Java nədir?</a></li>
+                <li><a href="#xususiyyetler">Xüsusiyyətlər</a></li>
+                <li><a href="#numuneler">Nümunələr</a></li>
+                <li><a href="#terefdaslar">Tərəfdaşlar</a></li>
+            </ul>
+            <button class="join-btn">
+                <img src="assets/sms.png" alt="SMS Icon">
+                Təlimə qoşul
+            </button>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Java</h1>
+                    <div class="hero-underline"></div>
+                    <p>Oracle Java bir nömrəli proqramlaşdırma dili və inkişaf platformasıdır. O, xərcləri azaldır, inkişaf müddətlərini qısaldır, innovasiyanı təşviq edir və tətbiq xidmətlərini yaxşılaşdırır. Dünya üzrə milyonlarla developer tərəfindən 60 milyarddan çox Java Virtual Machine (Java Virtual Maşın) işlətdiyi üçün Java həm də müəssisələr və developerler üçün üstünlük verilən inkişaf platforması olaraq qalmaqdadır.</p>
+                    <button class="hero-btn">Java yüklə</button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/monitor.png" alt="Java Illustration">
+                </div>
+            </div>
+        </section>
+      
+        <section class="features-section">
+            <div class="container">
+                <h2 class="features-title">Java Proqramlaşdırma Dilinin Xüsusiyyətləri</h2>
+                <p class="features-desc">Java, 1995-ci ildə Sun Microsystems (indiki Oracle) tərəfindən buraxılmış, obyekt-orientasiyalı, platformadan asılı olmayan və geniş istifadə sahəsinə malik bir proqramlaşdırma dilidir. Java-nın populyarlığı onun çoxsaylı xüsusiyyətləri ilə bağlıdır. Bu xüsusiyyətlər aşağıda ətraflı təsvir edilmişdir.</p>
+                <ol class="features-list">
+                    <li>
+                        <strong>1. Platformadan Asılı Olmaması</strong>
+                        <p>Java-nın ən mühüm xüsusiyyətlərindən biri onun platformadan asılı olmamasıdır. "Bir dəfə yaz, hər yerdə çalıştır" (Write Once, Run Anywhere - WORA) prinsipi Java-nın əsasını təşkil edir. Java proqramları Java Virtual Machine (JVM) üzərində çalışır. Bu, proqramçılara eyni kodu fərqli platformalarda yenidən yazmadan istifadə etməyə imkan verir.</p>
+                    </li>
+                    <li>
+                        <strong>2. Obyekt-Orientasiyalı Proqramlaşdırma</strong>
+                        <p>Java, obyekt-orientasiyalı proqramlaşdırma (OOP) prinsiplərinə əsaslanır. Bu, kodun modullu, təkrar istifadə edilə bilən və asan idarə olunan olmasını təmin edir.</p>
+                    </li>
+                    <li>
+                        <strong>3. Sadəlik</strong>
+                        <p>Java, C və C++ kimi dillərdən ilhamlanaraq yaradılmışdır, lakin daha sadə sintaksisə malikdir. Java, C++-dakı bəzi mürəkkəb xüsusiyyətləri (məsələn, pointerlər və çoxsaylı miras alma) aradan qaldıraraq proqramçıların işini asanlaşdırır. Bu, yeni başlayanlar üçün öyrənməni daha əlçatan edir.</p>
+                    </li>
+                    <li>
+                        <strong>4. Təhlükəsizlik</strong>
+                        <p>Java, təhlükəsizlik baxımından güclü bir dildir. Java-nın təhlükəsizlik mexanizmləri aşağıdakılardan ibarətdir:</p>
+                        <ul>
+                            <li>Bytecode Doğrulaması: JVM, proqramın icrasından əvvəl bytecode-u yoxlayır və potensial təhlükəli əməliyyatları bloklayır.</li>
+                            <li>Sandbox Modeli: Java apletləri məhdudlaşdırılmış bir mühitdə (sandbox) işləyir, bu da zərərli kodun sistemə zərər verməsinin qarşısını alır.</li>
+                            <li>Təhlükəsizlik Meneceri: Java-nın Security Manager sinfi proqramların icazəsiz əməliyyatlar yerinə yetirməsini məhdudlaşdırır.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>5. Çoxaxınlılıq (Multithreading)</strong>
+                        <p>Java, çoxaxınlılıq (multithreading) dəstəyi ilə proqramların eyni anda bir neçə tapşırığı yerinə yetirməsinə imkan verir. Bu xüsusiyyət, xüsusilə server tətbiqləri və real vaxt sistemləri üçün faydalıdır. Java-nın Thread sinfi və Runnable interfeysi çoxaxınlı proqramlaşdırmanı asanlaşdırır.</p>
+                    </li>
+                    <li>
+                        <strong>6. Zəngin API və Kitabxanalar</strong>
+                        <p>Java, geniş və funksional API-lara malikdir. Java Standard Kitabxanası (Java Standard Library) şəbəkə əməliyyatları, fayl idarəetməsi, verilənlər bazası ilə iş, qrafik interfeyslər və s. kimi bir çox sahədə funksionallıq təmin edir. Bundan əlavə, Java-nın geniş ekosistemi çoxsaylı üçüncü tərəf kitabxanalarını və framework-ləri (Spring, Hibernate və s.) dəstəkləyir.</p>
+                    </li>
+                    <li>
+                        <strong>7. Zibil Toplayıcı (Garbage Collection)</strong>
+                        <p>Java, avtomatik yaddaş idarəetməsi ilə tanınır. Zibil toplayıcı (Garbage Collector) artıq istifadə olunmayan obyektləri yaddaşdan təmizləyir. Bu, yaddaş sızması (memory leak) problemlərini minimuma endirir və proqramçıların yaddaş idarəetməsi ilə bağlı narahatlıqlarını azaldır.</p>
+                    </li>
+                    <li>
+                        <strong>8. Geniş İstifadə Sahəsi</strong>
+                        <p>Java, müxtəlif sahələrdə istifadə olunur:</p>
+                        <ul class="usage-list">
+                            <li>Veb tətbiqləri: Spring və JavaServer Faces kimi framework-lər ilə.</li>
+                            <li>Mobil tətbiqlər: Android proqramlaşdırma üçün Java və Kotlin əsas dillərdir.</li>
+                            <li>Müəssisə tətbiqləri: Java EE platforması böyük miqyaslı biznes tətbiqləri üçün istifadə olunur.</li>
+                            <li>Oyun inkişafı: LibGDX kimi kitabxanalarla oyun yaradılır.</li>
+                            <li>Böyük məlumat və süni intellekt: Hadoop və Spark kimi alətlər Java əsasında işləyir.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="consult-section">
+            <div class="consult-container">
+                <div class="consult-left">
+                    <h2 class="consult-title">Konsultasiyaya<br>dəvət edirik!</h2>
+                    <p class="consult-desc">Java developer olmaq istəyirsən ? Və ya Java developersən və özünü inkişaf etdirmək istəyirsən?  Biza olan suallarını yaz və ən qısa zamanda cavablandırıq.</p>
+                    <button class="consult-btn">Göndər</button>
+                </div>
+                <form class="consult-form">
+                    <input type="text" placeholder="Ad, soyad" class="consult-input" />
+                    <textarea placeholder="Yaz . . ." class="consult-textarea"></textarea>
+                </form>
+            </div>
+        </section>
+        <section class="code-section">
+            <div class="code-container">
+                <h2 class="code-title">Java Kodlarına Nümunələr</h2>
+                <!-- Example 1 -->
+                <div class="code-example">
+                    <div class="code-example-header">
+                        <div class="code-example-title"><strong>1. Əsas "Hello World" Başlanğıc üçün</strong></div>
+                        <div class="code-actions">
+                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
+                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                        </div>
+                    </div>
+                    <pre class="code-block"><code class="language-java">public class Main {
+    public static void main(String[] args) {
+        System.out.println("Salam, Dünya!"); // Konsola çıxış
+    }
+}</code></pre>
+                </div>
+                <div class="code-purpose">
+                    <strong>Məqsəd:</strong> Java'nın ən əsas sintaksisini nümayiş etdirir - class, metod və çıxış əmri.
+                </div>
+                <!-- Example 2 -->
+                <div class="code-example">
+                    <div class="code-example-header">
+                        <div class="code-example-title"><strong>2. Dəyişənlər və Şərt Operatoru (Fundamental konseptlər)</strong></div>
+                        <div class="code-actions">
+                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
+                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                        </div>
+                    </div>
+                    <pre class="code-block"><code class="language-java">public class Weather {
+    public static void main(String[] args) {
+        int temperature = 23; // Dərəcə
+        if (temperature > 30) {
+            System.out.println("Hava çox istidir");
+        } else if (temperature > 20) {
+            System.out.println("İdeal hava!"); // Bu blok işləyəcək
+        } else {
+            System.out.println("Soyuq hava");
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="code-purpose">
+                    <strong>Məqsəd:</strong> Dəyişən elanı, if-else quruluşu və şərti məntiqi izah edir.
+                </div>
+                <!-- Example 3 -->
+                <div class="code-example">
+                    <div class="code-example-header">
+                        <div class="code-example-title"><strong>3. Try-Catch (Xəta idarəetmə)</strong></div>
+                        <div class="code-actions">
+                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
+                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                        </div>
+                    </div>
+                    <pre class="code-block"><code class="language-java">import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Birinci ədəd: ");
+            int a = scanner.nextInt();
+            System.out.print("İkinci ədəd: ");
+            int b = scanner.nextInt();
+            System.out.println("Nəticə: " + (a / b));
+        } catch (ArithmeticException e) {
+            System.err.println("Xəta: Sıfıra bölmə!"); // Əgər b=0 olarsa
+        } catch (Exception e) {
+            System.err.println("Gözlənilməyən xəta!");
+        } finally {
+            scanner.close(); // Resursu sərbəst burax
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="code-purpose">
+                    <strong>Məqsəd:</strong> Xəta idarəetmə mexanizmi (<code>try-catch-finally</code>), istifadəçi daxil etməsi.
+                </div>
+            </div>
+        </section>
+        <section class="partners-section">
+            <div class="partners-container">
+                <h2 class="partners-title">Tərəfdaşlar</h2>
+                <div class="partners-logos">
+                    <a href="https://sql.az" target="_blank" rel="noopener noreferrer"><img src="assets/sqlaz.png" alt="SQL.az" class="partner-logo" /></a>
+                    <a href="https://dba.az" target="_blank" rel="noopener noreferrer"><img src="assets/dba.png" alt="DBA.az" class="partner-logo" /></a>
+                    <a href="https://plsql.az" target="_blank" rel="noopener noreferrer"><img src="assets/plsqlaz.png" alt="PLSQL.az" class="partner-logo" /></a>
+                    <a href="https://techbridge.az" target="_blank" rel="noopener noreferrer"><img src="assets/techbridge.png" alt="Tech Bridge" class="partner-logo" /></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="assets/Logo.png" alt="Java.az Logo" class="footer-logo" />
+            </div>
+            <div class="footer-right">
+                <span class="footer-phone">+994 55 940 95 65</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script>
+    // Copy code functionality
+    document.querySelectorAll('.code-copy').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const code = btn.closest('.code-example').querySelector('code').innerText;
+            navigator.clipboard.writeText(code);
+            btn.textContent = 'Kopyalandı!';
+            setTimeout(() => { btn.innerHTML = '<span class="icon-copy"></span> Köçür'; }, 1200);
+        });
+    });
+    // Download code functionality
+    document.querySelectorAll('.code-download').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const code = btn.closest('.code-example').querySelector('code').innerText;
+            const blob = new Blob([code], {type: 'text/plain'});
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Main.java';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    });
+    </script>
+</body>
+</html> 
