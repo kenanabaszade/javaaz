@@ -429,7 +429,7 @@ p {
 /* Container Utility */
 .container { 
     margin: 0 auto;
-    padding: 35px 260px;
+    padding: 35px 340px;
     background: #fff;
     border-radius: 0;
     box-sizing: border-box;
