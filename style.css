@@ -287,8 +287,7 @@ section[id] {
 }
 
 .container { 
-    padding 
-    : 35px 342px;
+    padding : 35px 342px;
     margin: 0 auto;
     padding: 3rem 2rem;
     background: #fff;
@@ -1045,4 +1044,10 @@ p {
 @media (max-width: 900px) {
   .consult-btn-desktop { display: none; }
   .consult-btn-mobile { display: inline-block; width: 100%; margin-top: 0.5rem; }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    padding: 35px 152px;
+  }
 } 
