@@ -1046,7 +1046,7 @@ p {
   .consult-btn-mobile { display: inline-block; width: 100%; margin-top: 0.5rem; }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1550px) {
   .container {
     padding: 35px 152px;
   }
