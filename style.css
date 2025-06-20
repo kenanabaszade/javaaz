@@ -1,5 +1,4 @@
- /* Reset all default styles */
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,11 +8,162 @@
     border: none;
 }
 
+/* Oracle Sans Font Faces */
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url('assets/fonts/georgia/georgia.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OracleSans';
+    src: url('assets/fonts/oraclesams/OracleSans-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/fonts/JetBrainsMono/JetBrainsMono-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'OracleSans', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-}
+}  
 
 /* Navbar Styles */
 .navbar {
@@ -26,7 +176,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1228px;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
@@ -87,6 +237,16 @@ main {
 
 section { 
     padding: 2rem 0;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+    section[id] {
+        scroll-margin-top: 60px;
+    }
 }
 
 /* Responsive Design */
@@ -164,7 +324,7 @@ p {
     max-width: 1200px;
     width: 100%;
     gap: 3rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .hero-text {
@@ -179,6 +339,7 @@ p {
 
 .hero-text h1 {
     font-size: 3rem;
+    font-family: "Georgia";
     font-weight: 500;
     color: #fff;
     margin-bottom: 0.5rem;
@@ -268,7 +429,7 @@ p {
 /* Container Utility */
 .container { 
     margin: 0 auto;
-    padding: 35px 342px;
+    padding: 35px 260px;
     background: #fff;
     border-radius: 0;
     box-sizing: border-box;
@@ -282,6 +443,7 @@ p {
 
 .features-title {
     font-size: 2.3rem;
+    font-family: "Georgia";
     font-weight: 700;
     color: #444;
     margin-bottom: 1.2rem;
@@ -406,11 +568,11 @@ p {
 
 .consult-left {
     flex: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    text-align: center;
+    justify-content: center; 
     padding-top: 1rem;
 }
 
@@ -426,9 +588,9 @@ p {
 
 .consult-desc {
     color: #222;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     margin-bottom: 2.2rem;
-    max-width: 350px;
+    max-width: 600px;
 }
 
 .consult-btn {
@@ -510,6 +672,7 @@ p {
 @media (max-width: 600px) {
     .consult-title {
         font-size: 1.5rem;
+        text-align: center;
     }
     .consult-container {
         padding: 1.2rem 0.5rem;
@@ -559,6 +722,9 @@ p {
     box-shadow: none;
     border: none;
     overflow: hidden;
+}
+.language-java {
+    font-family: "JetBrains Mono";
 }
 
 .code-example-header {
@@ -662,7 +828,7 @@ p {
 }
 
 .partners-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 1.5rem 2rem 1.5rem 2rem;
     box-sizing: border-box;
@@ -713,13 +879,14 @@ p {
 }
 
 .partner-logo {
-    max-height: 118px;
+    max-height: 100px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(1) drop-shadow(0 2px 8px rgba(0,0,0,0.04));
+    filter: grayscale(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.04));
     background: none;
     transition: filter 0.3s;
-    margin: 0 0.5rem;
+    margin: 0 2.9rem;
+
 }
 .partners-logos a:hover .partner-logo,
 .partners-logos a:focus .partner-logo {
@@ -750,6 +917,7 @@ p {
     }
     .partner-logo {
         max-height: 27px;
+        margin: 0;
     }
 }
 
@@ -762,9 +930,9 @@ p {
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1307px;
     margin: 0 auto;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -778,9 +946,10 @@ p {
 }
 
 .footer-logo {
-    height: 60px;
+    height: 64px;
     width: auto;
     display: block;
+    margin-bottom: 30px;
 }
 
 .footer-brand {
@@ -867,4 +1036,13 @@ p {
         height: 28px;
         font-size: 1rem;
     }
+}
+
+/* Consult button visibility for desktop/mobile */
+.consult-btn-mobile { display: none; }
+.consult-btn-desktop { display: inline-block; }
+
+@media (max-width: 900px) {
+  .consult-btn-desktop { display: none; }
+  .consult-btn-mobile { display: inline-block; width: 100%; margin-top: 0.5rem; }
 } 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java.az</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Prism.js for syntax highlighting -->
@@ -101,13 +102,14 @@
         <section class="consult-section">
             <div class="consult-container">
                 <div class="consult-left">
-                    <h2 class="consult-title">Konsultasiyaya<br>dəvət edirik!</h2>
+                    <h2 class="consult-title">Təlimə<br>dəvət edirik!</h2>
                     <p class="consult-desc">Java developer olmaq istəyirsən ? Və ya Java developersən və özünü inkişaf etdirmək istəyirsən?  Biza olan suallarını yaz və ən qısa zamanda cavablandırıq.</p>
-                    <button class="consult-btn">Göndər</button>
+                    <button class="consult-btn consult-btn-desktop">Göndər</button>
                 </div>
                 <form class="consult-form">
                     <input type="text" placeholder="Ad, soyad" class="consult-input" />
                     <textarea placeholder="Yaz . . ." class="consult-textarea"></textarea>
+                    <button class="consult-btn consult-btn-mobile">Göndər</button>
                 </form>
             </div>
         </section>
@@ -119,8 +121,8 @@
                     <div class="code-example-header">
                         <div class="code-example-title"><strong>1. Əsas "Hello World" Başlanğıc üçün</strong></div>
                         <div class="code-actions">
-                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
-                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                            <button class="code-copy" title="Köçür"><img src="assets/solar_copy.png" alt="Copy" style="width: 20px; height: 20px; vertical-align: middle;"> Köçür</button>
+                            <button class="code-download" title="Yüklə"><img src="assets/fluent_arrow.png" alt="Download" style="width: 20px; height: 20px; vertical-align: middle;"> Yüklə</button>
                         </div>
                     </div>
                     <pre class="code-block"><code class="language-java">public class Main {
@@ -137,8 +139,8 @@
                     <div class="code-example-header">
                         <div class="code-example-title"><strong>2. Dəyişənlər və Şərt Operatoru (Fundamental konseptlər)</strong></div>
                         <div class="code-actions">
-                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
-                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                            <button class="code-copy" title="Köçür"><img src="assets/solar_copy.png" alt="Copy" style="width: 20px; height: 20px; vertical-align: middle;"> Köçür</button>
+                            <button class="code-download" title="Yüklə"><img src="assets/fluent_arrow.png" alt="Download" style="width: 20px; height: 20px; vertical-align: middle;"> Yüklə</button>
                         </div>
                     </div>
                     <pre class="code-block"><code class="language-java">public class Weather {
@@ -162,8 +164,8 @@
                     <div class="code-example-header">
                         <div class="code-example-title"><strong>3. Try-Catch (Xəta idarəetmə)</strong></div>
                         <div class="code-actions">
-                            <button class="code-copy" title="Köçür"><span class="icon-copy"></span> Köçür</button>
-                            <button class="code-download" title="Yüklə"><span class="icon-download"></span> Yüklə</button>
+                            <button class="code-copy" title="Köçür"><img src="assets/solar_copy.png" alt="Copy" style="width: 20px; height: 20px; vertical-align: middle;"> Köçür</button>
+                            <button class="code-download" title="Yüklə"><img src="assets/fluent_arrow.png" alt="Download" style="width: 20px; height: 20px; vertical-align: middle;"> Yüklə</button>
                         </div>
                     </div>
                     <pre class="code-block"><code class="language-java">import java.util.Scanner;
@@ -213,8 +215,8 @@ public class Calculator {
             <div class="footer-right">
                 <span class="footer-phone">+994 55 940 95 65</span>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/techbridge.az/" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61570193976563&mibextid=LQQJ4d&rdid=VEP9lxCjEdvAnFn2&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14ftsUXAid%2F%3Fmibextid%3DLQQJ4d#" target="_blank" rel="noopener noreferrer" class="footer-social"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </footer>
@@ -230,7 +232,7 @@ public class Calculator {
             const code = btn.closest('.code-example').querySelector('code').innerText;
             navigator.clipboard.writeText(code);
             btn.textContent = 'Kopyalandı!';
-            setTimeout(() => { btn.innerHTML = '<span class="icon-copy"></span> Köçür'; }, 1200);
+            setTimeout(() => { btn.innerHTML = '<img src="assets/solar_copy.png" alt="Copy" style="width: 20px; height: 20px; vertical-align: middle;"> Köçür'; }, 1200);
         });
     });
     // Download code functionality
